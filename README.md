@@ -1,2 +1,2 @@
-# angular10-html-template
-Create a html template for angular 10
+# angular10_demo_project1
+Create a angular 10 demo project
