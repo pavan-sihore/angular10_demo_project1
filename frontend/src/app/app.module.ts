@@ -8,6 +8,7 @@ import { AuthModule } from './manage/auth/auth.module';
 import { SharedModule } from './manage/shared/shared.module';
 import { HomeComponent } from './front/components/home/home.component';
 import { DashboardComponent } from './manage/conponents/dashboard/dashboard.component';
+import { TokenService } from './services/token.service'
 
 @NgModule({
   declarations: [AppComponent, DashboardComponent, HomeComponent],
@@ -19,7 +20,7 @@ import { DashboardComponent } from './manage/conponents/dashboard/dashboard.comp
     HttpClientModule, 
     SharedModule, 
   ],
-  providers: [],
+  providers: [TokenService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

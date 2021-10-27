@@ -17,12 +17,12 @@ export class AuthService {
 
   constructor(private http: HttpClient ) { }
 
-  singup(username: String, password: String){
+  singIn(username: String, password: String){
     return this.http.post<AuthResponceData>(environment.hostBaseUrl+'/api/login',{
       "email": username,
       "password": password
     }).pipe(catchError(this.handleError));
-  }//end singup function
+  }//end singIn function
 
   private handleError(errorRes: HttpErrorResponse){
     let errorMessage = "Unkonwn error occurred!";
